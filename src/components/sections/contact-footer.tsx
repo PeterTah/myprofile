@@ -30,6 +30,15 @@ export function ContactFooter() {
             size="lg"
             variant="outline"
             nativeButton={false}
+            render={<a href={`mailto:${contact.emailSecondary}`} />}
+          >
+            <Mail className="size-4" />
+            {contact.emailSecondary}
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            nativeButton={false}
             render={<a href={profile.resumeUrl} download />}
           >
             <Download className="size-4" />
